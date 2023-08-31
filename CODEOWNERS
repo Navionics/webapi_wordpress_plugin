@@ -20,4 +20,4 @@
 # When someone opens a pull request that only modify
 # a DevOps file, only DevOps and not the global owner(s) will
 # be requested for a review.
-/aws/ @Navionics/devops_ponente
+/aws/ @Navionics/navionics-devops
