@@ -1,0 +1,23 @@
+# Each line is a file pattern followed by one or more owners.
+
+# These owners will be the default owners for everything in
+# the repo. Unless a later match takes precedence, They will
+# be requested for review when someone opens a pull request.
+* @agentili @ldgiusto @gianluigiruggeri
+
+# Order is important; the last matching pattern takes the most
+# precedence.
+
+# ----------------------- Developers --------------------------
+
+# When someone opens a pull request that only modify
+# a Jenkins or a Docker file, only Developers / CI experts
+# and not the global owner(s) will be requested for a review.
+/environments/ @agentili @ldgiusto @gianluigiruggeri
+
+# ----------------------- DevOps --------------------------
+
+# When someone opens a pull request that only modify
+# a DevOps file, only DevOps and not the global owner(s) will
+# be requested for a review.
+/aws/ @Navionics/devops_ponente
